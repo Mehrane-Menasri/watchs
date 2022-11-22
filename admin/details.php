@@ -212,7 +212,7 @@ if (isset($_SESSION['user_name'])) {
             if (empty($formErrors)) {
 
                 $image = rand(0, 100000) . '_' . $imageName;
-                move_uploaded_file($imageTmp, "uploads\images\\" . $image);
+                move_uploaded_file($imageTmp, "uploads/images/" . $image);
 
                 // update the database with this info
                 $stmt = $con->prepare("UPDATE details SET title = ?, phone = ?, email = ?, facebook = ?, twitter = ?, instagram = ?, address = ?, logo = ?, thank = ?, pixel = ? WHERE id = ?");

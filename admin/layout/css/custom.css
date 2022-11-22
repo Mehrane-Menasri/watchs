@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Nova+Slim&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Nova+Slim&display=swap');
 
 body, html {
 	line-height: 1.8;
@@ -11,8 +11,6 @@ body, html {
     font-weight: 400;
     margin:0px;
     padding:0px;
-    text-align: right;
-    direction: rtl;
 }
 * {
     font-family: 'Cairo' !important;
@@ -134,7 +132,7 @@ a:focus {
 	height:100vh!important;
     top: 0;
     bottom: 0;
-    right: 0;
+    left: 0;
     z-index:11;
     width: 260px;
 	overflow:auto;
@@ -182,7 +180,7 @@ a:focus {
 
 .sidebar-header h3 img{
 	width:45px;
-	margin-left:10px;
+	margin-right:10px;
 }
 
 #sidebar ul li{
@@ -201,7 +199,7 @@ a:focus {
 
 .dropdown-toggle::after {
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: 23px;
 }
 
@@ -231,10 +229,10 @@ a:focus {
 
 #sidebar ul li a i {
     position: relative;
-    margin-left: 10px;
+    margin-right: 10px;
     top: 5px;
 	color: #555555;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -298,7 +296,7 @@ a:focus {
 	height:45px;
 	text-align:center;
 	line-height:45px;
-	margin-left:20px;
+	margin-right:20px;
 	border:none;
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.09);
@@ -325,7 +323,7 @@ a:focus {
 .navbar .notification {
 	 position: absolute;
     top: 5px;
-    left: 10px;
+    right: 10px;
 	display: block;
     font-size: 9px;
     border: 0px;
@@ -405,7 +403,7 @@ a:focus {
 }
 
 .card-stats .card-header {
-    float: right;
+    float: left;
     text-align: center;
 }
 
@@ -454,7 +452,7 @@ a:focus {
 }
 
 .card-stats .card-content {
-    text-align: left;
+    text-align: right;
     padding-top: 10px;
 }
 
@@ -514,13 +512,13 @@ a:focus {
 }
 
 .streamline .sl-primary {
-    border-right-color: #188ae2;
+    border-left-color: #188ae2;
 }
 
 .streamline .sl-item {
     position: relative;
     padding-bottom: 12px;
-    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 
@@ -528,7 +526,7 @@ a:focus {
 .streamline .sl-item:before {
     content: '';
     position: absolute;
-    right: -6px;
+    left: -6px;
     top: 0;
     background-color: #ccc;
     width: 12px;
@@ -545,7 +543,7 @@ a:focus {
 }
 
 .streamline .sl-success {
-    border-right-color: #10c469;
+    border-left-color: #10c469;
 }
 
 .streamline .sl-success:before, .streamline .sl-success:last-child:after {
@@ -553,7 +551,7 @@ a:focus {
 }
 
 .streamline .sl-warning {
-    border-right-color: #f9c851;
+    border-left-color: #f9c851;
 }
 
 .streamline .sl-warning:before, .streamline .sl-warning:last-child:after {
@@ -563,10 +561,10 @@ a:focus {
 
 
 .streamline .sl-danger {
-    border-right-color: #ff5b5b;
+    border-left-color: #ff5b5b;
 }
 .streamline .sl-item .sl-content {
-    margin-right: 24px;
+    margin-left: 24px;
 }
 
 .streamline .sl-item .text-muted {
@@ -618,7 +616,7 @@ footer ul li a {
 }
 
 
-footer .copyleft {
+footer .copyright {
     padding: 15px;
 	font-size:14px;
     margin: 0;
@@ -655,7 +653,7 @@ footer .copyleft {
 	overflow:visible!important;
 	top:0!important;
 	z-index:666;
-	float:right!important;
+	float:left!important;
     bottom: 0!important;
 }
 
@@ -678,7 +676,7 @@ footer .copyleft {
 #content {
     width: calc(100% - 260px);
     position: relative;
-    float: left;
+    float: right;
     transition: all 0.3s;
     background-color: #EEEEEE;
 }  
@@ -689,7 +687,7 @@ footer .copyleft {
 
 #sidebar.active .menu {
     position: absolute;
-    right: 81px;
+    left: 81px;
     background-color: white;
     width: 180px;
     height: auto;
@@ -710,8 +708,8 @@ footer .copyleft {
 	transition: all 150ms linear;
     display: block;
 	min-width:15rem;
-	left: 0;
-    right: auto;
+	right: 0;
+    left: auto;
     opacity: 0;
 }
 	
@@ -728,7 +726,7 @@ footer .copyleft {
 .list-group-item {
     padding: 10px !important;
 }
-/*===============small-screen overlay sidebar design media queries==============*/
+/*=============== small-screen overlay sidebar design media queries ==============*/
 
 @media only screen and (max-width:992px){
 #sidebar {
@@ -745,7 +743,7 @@ footer .copyleft {
 .body-overlay{
 	position:fixed;
 	top:0;
-	right:0;
+	left:0;
 	width:100%;
 	height:100%;
 	display:none;

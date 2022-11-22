@@ -32,8 +32,8 @@ a {
     background: #1974d2;
     padding: 10px;
     width: auto;
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-left: 15px;
     line-height: normal;
     height: 100%;
     color: #fff; }
@@ -47,8 +47,8 @@ a {
     overflow: hidden; }
     @media (max-width: 575px) {
       .acme-news-ticker-box {
-        padding-left: 10px;
-        padding-right: 120px; } }
+        padding-right: 10px;
+        padding-left: 120px; } }
     .acme-news-ticker-box ul {
       width: 100%;
       list-style-type: none !important;
@@ -62,7 +62,7 @@ a {
     display: flex;
     position: absolute;
     height: 100%;
-    right: 0;
+    left: 0;
     top: 0; }
     .acme-news-ticker-controls button {
       height: 100%;
@@ -84,12 +84,12 @@ a {
           border-color: #999;
           border-bottom-style: solid;
           border-bottom-width: 2px;
-          border-right-style: solid;
-          border-right-width: 2px;
+          border-left-style: solid;
+          border-left-width: 2px;
           content: '';
           display: inline-block;
           height: 8px;
-          left: 50%;
+          right: 50%;
           position: absolute;
           top: 50%;
           width: 8px; }
@@ -107,7 +107,7 @@ a {
           -webkit-transform: translate(-50%, -50%);
               -ms-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
-          left: 50%;
+          right: 50%;
           top: 50%; }
     .acme-news-ticker-controls.acme-news-ticker-horizontal-controls button.acme-news-ticker-prev:after {
       -webkit-transform: translate(-50%, -50%) rotate(135deg);

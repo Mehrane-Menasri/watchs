@@ -6,20 +6,20 @@
                                     <ul class="m-0 p-0">
                                         <li>
                                             <a href="dashboard.php">
-                                                الرئيسية
+                                                Home
                                             </a>
                                         </li>
                                         <li>
                                             <a href="../index.php">
-                                                المتجر
+                                                Website
                                             </a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="col-md-6">
-                                <p class="copyright d-flex justify-content-end"> &copy من إنجاز
-                                    <a href="https://mehranesoft.com/" target="_blank"> مهران مناصري </a> - 2022
+                                <p class="copyright d-flex justify-content-end"> &copy Devloped By 
+                                    <a href="https://mehranesoft.com/" target="_blank"> MEHRANE MENASRI </a> - 2022
                                 </p>
                             </div>
                         </div>

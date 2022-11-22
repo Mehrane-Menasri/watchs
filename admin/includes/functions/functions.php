@@ -15,7 +15,7 @@ function getTitle() {
     if(isset($pageTitle)) {
         echo $pageTitle;
     } else {
-        echo 'ساعاتي';
+        echo 'BARBERSHOP';
     }
 }
 
@@ -40,15 +40,15 @@ function redirectPage($theMsg, $url = null, $seconds = 3){
     }else{
         if(isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] !== ''){
             $url = $_SERVER['HTTP_REFERER'];
-            $link = 'الصفحة السابقة';
+            $link = 'Recent Page';
         }else{
             $url = 'index.php';
-            $link = 'الصفحة  الرئيسية';
+            $link = 'Home Page';
         }
     }
 
     echo $theMsg;
-    echo "<div class='alert alert-info'>سيتم تحويلك إلي <strong>$link</strong> بعد: $seconds ثوان.</div>";
+    echo "<div class='alert alert-info'>You will be redirected <strong>$link</strong> within: $seconds seconds.</div>";
     header("refresh:$seconds;url=$url");
     exit();
 }
